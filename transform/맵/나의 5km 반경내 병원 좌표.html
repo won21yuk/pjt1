@@ -1,0 +1,2591 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6aa90994cb39f6f136846758c6bf0253 {
+                    position: relative;
+                    width: 70.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://unpkg.com/leaflet.featuregroup.subgroup@1.0.2/dist/leaflet.featuregroup.subgroup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6aa90994cb39f6f136846758c6bf0253" ></div>
+        
+</body>
+<script>    
+    
+            var map_6aa90994cb39f6f136846758c6bf0253 = L.map(
+                "map_6aa90994cb39f6f136846758c6bf0253",
+                {
+                    center: [37.6102, 127.0071],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c1d6ab6e5081f8fc287b4c188a916692 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+    
+            var marker_cluster_0e7380614360a9a57150d3f649bc5dcd = L.markerClusterGroup(
+                {}
+            );
+            map_6aa90994cb39f6f136846758c6bf0253.addLayer(marker_cluster_0e7380614360a9a57150d3f649bc5dcd);
+        
+    
+            var feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8 = L.featureGroup.subGroup(
+                marker_cluster_0e7380614360a9a57150d3f649bc5dcd
+            );
+            feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8.addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+    
+            var marker_4f785be95fb43b62db5c68c942e44808 = L.marker(
+                [37.5718747899, 126.9794814658],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_9f1cd3638d91e53b96d7c86c553e9b38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_4f785be95fb43b62db5c68c942e44808.setIcon(icon_9f1cd3638d91e53b96d7c86c553e9b38);
+        
+    
+            marker_4f785be95fb43b62db5c68c942e44808.bindTooltip(
+                `<div>
+                     (주)마음연구소 부설 마음iN심리상담센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b08cd8ffd601d44292dadcbb38d50c00 = L.marker(
+                [37.5887034224, 127.0316983312],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_7ef82d84a1fc924211e6f6b7191bf8c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_b08cd8ffd601d44292dadcbb38d50c00.setIcon(icon_7ef82d84a1fc924211e6f6b7191bf8c2);
+        
+    
+            marker_b08cd8ffd601d44292dadcbb38d50c00.bindTooltip(
+                `<div>
+                     고려대학교 학생상담센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d907d84fc29fa983267f002cb23e0c94 = L.marker(
+                [37.5885353347, 127.0101277234],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_54587602946160f847d9e8ad4f8a1713 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_d907d84fc29fa983267f002cb23e0c94.setIcon(icon_54587602946160f847d9e8ad4f8a1713);
+        
+    
+            marker_d907d84fc29fa983267f002cb23e0c94.bindTooltip(
+                `<div>
+                     나사랑심리상담센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_525cf5c96155426445d813f9dd92fd4d = L.marker(
+                [37.6068148328, 127.0411763018],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_040479a78e59592f46fcdaa4ceb8559d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_525cf5c96155426445d813f9dd92fd4d.setIcon(icon_040479a78e59592f46fcdaa4ceb8559d);
+        
+    
+            marker_525cf5c96155426445d813f9dd92fd4d.bindTooltip(
+                `<div>
+                     동덕여자대학교 일반대학원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b28b925b87791503eb94042910b4d79 = L.marker(
+                [37.5795440102, 126.9672918715],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_443bef99ff379e27b404d42551b4b2d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_8b28b925b87791503eb94042910b4d79.setIcon(icon_443bef99ff379e27b404d42551b4b2d4);
+        
+    
+            marker_8b28b925b87791503eb94042910b4d79.bindTooltip(
+                `<div>
+                     배화여자대학교 학생상담지원실
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e48f5d130be6a2618f628044d613d87 = L.marker(
+                [37.5804523853, 126.9971964379],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_bccacec16fce9ef5e2cd353fc1f5eb60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_6e48f5d130be6a2618f628044d613d87.setIcon(icon_bccacec16fce9ef5e2cd353fc1f5eb60);
+        
+    
+            marker_6e48f5d130be6a2618f628044d613d87.bindTooltip(
+                `<div>
+                     서울해바라기센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a343b72ddaa018b36dbbd74555877f3 = L.marker(
+                [37.6268313147, 127.0270125407],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_77904448fe9dde80d2052d6286b15f74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_3a343b72ddaa018b36dbbd74555877f3.setIcon(icon_77904448fe9dde80d2052d6286b15f74);
+        
+    
+            marker_3a343b72ddaa018b36dbbd74555877f3.bindTooltip(
+                `<div>
+                     푸른존
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c2553723387bf56a21ffdc5ff07ab63 = L.marker(
+                [37.5744754999, 126.9887757806],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_2de41afebf8e17c1f6e4129267707297 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_9c2553723387bf56a21ffdc5ff07ab63.setIcon(icon_2de41afebf8e17c1f6e4129267707297);
+        
+    
+            marker_9c2553723387bf56a21ffdc5ff07ab63.bindTooltip(
+                `<div>
+                     한국상담임상심리센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3129a94089cc1e262d8df82bc6a8b9bd = L.marker(
+                [37.5938781053, 126.9642539379],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_5ffd10e302e968805aec4fbda019ac8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_3129a94089cc1e262d8df82bc6a8b9bd.setIcon(icon_5ffd10e302e968805aec4fbda019ac8a);
+        
+    
+            marker_3129a94089cc1e262d8df82bc6a8b9bd.bindTooltip(
+                `<div>
+                     아하가족성장연구소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af625446e429009c9b5549d73f7131f7 = L.marker(
+                [37.5812785896, 126.969251839],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_6f0170ac52a52b391a24f412083f73e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_af625446e429009c9b5549d73f7131f7.setIcon(icon_6f0170ac52a52b391a24f412083f73e5);
+        
+    
+            marker_af625446e429009c9b5549d73f7131f7.bindTooltip(
+                `<div>
+                     소열심리상담센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94574bc282c860f559bc74e0a0e45128 = L.marker(
+                [37.6041089059, 126.9551594966],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_c81cd425ed6b9ea32d4587d706a7ad13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_94574bc282c860f559bc74e0a0e45128.setIcon(icon_c81cd425ed6b9ea32d4587d706a7ad13);
+        
+    
+            marker_94574bc282c860f559bc74e0a0e45128.bindTooltip(
+                `<div>
+                     상명가족아동상담연구소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17c2451d8e06014dc361128558f67837 = L.marker(
+                [37.5689255567, 126.9862810309],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_2a17fae895cec904f20d23e0c08275c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_17c2451d8e06014dc361128558f67837.setIcon(icon_2a17fae895cec904f20d23e0c08275c4);
+        
+    
+            marker_17c2451d8e06014dc361128558f67837.bindTooltip(
+                `<div>
+                     한국REBT인지행동치료상담센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ea6e093a6e51f9d66ab4cca70b817c4 = L.marker(
+                [37.6240096803, 127.0605574335],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_3a261b851e7125c8dd7683d290cbe663 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_5ea6e093a6e51f9d66ab4cca70b817c4.setIcon(icon_3a261b851e7125c8dd7683d290cbe663);
+        
+    
+            marker_5ea6e093a6e51f9d66ab4cca70b817c4.bindTooltip(
+                `<div>
+                     광운대학교심리건강증진센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_827559a437968cd231b4f94e396b0a59 = L.marker(
+                [37.5748131123, 127.0229753853],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_2a7d76451c675da27ee0c6a641edfe47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_827559a437968cd231b4f94e396b0a59.setIcon(icon_2a7d76451c675da27ee0c6a641edfe47);
+        
+    
+            marker_827559a437968cd231b4f94e396b0a59.bindTooltip(
+                `<div>
+                     대한가족상담연구소 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17e4a57de6c81d3ef2783ad8357d7db6 = L.marker(
+                [37.5752705616, 126.9881014221],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_078679e63bd1914d32249d80e45d4bed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_17e4a57de6c81d3ef2783ad8357d7db6.setIcon(icon_078679e63bd1914d32249d80e45d4bed);
+        
+    
+            marker_17e4a57de6c81d3ef2783ad8357d7db6.bindTooltip(
+                `<div>
+                     한국상담임상심리센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84d8580614162b0fae2b7f311afa264e = L.marker(
+                [37.5891313299, 127.0044930815],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_5a2febcb3c417a97df4c2c78828834fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_84d8580614162b0fae2b7f311afa264e.setIcon(icon_5a2febcb3c417a97df4c2c78828834fb);
+        
+    
+            marker_84d8580614162b0fae2b7f311afa264e.bindTooltip(
+                `<div>
+                     호시담연구소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1d1f0ad6840e26bfa042ac116cf763d = L.marker(
+                [37.5869442676, 126.9870630256],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8);
+        
+    
+            var icon_b89d950e212da585eede52776536670f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_d1d1f0ad6840e26bfa042ac116cf763d.setIcon(icon_b89d950e212da585eede52776536670f);
+        
+    
+            marker_d1d1f0ad6840e26bfa042ac116cf763d.bindTooltip(
+                `<div>
+                     고려사이버대학교 CUK심리상담센터 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9 = L.featureGroup.subGroup(
+                marker_cluster_0e7380614360a9a57150d3f649bc5dcd
+            );
+            feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9.addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+    
+            var marker_0792648f4b3e40d917fab796e6722850 = L.marker(
+                [37.6170464839, 127.01563986],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9);
+        
+    
+            var icon_67d95db27d45c0a8fe89c6db1133c02c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0792648f4b3e40d917fab796e6722850.setIcon(icon_67d95db27d45c0a8fe89c6db1133c02c);
+        
+    
+            marker_0792648f4b3e40d917fab796e6722850.bindTooltip(
+                `<div>
+                     강북구 정신건강복지센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91ecd5ad0643f24ac5a3921ba4d5f299 = L.marker(
+                [37.5875163185, 127.0427076375],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9);
+        
+    
+            var icon_3c57e23e5c0de2cd49254a615e3ff34f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_91ecd5ad0643f24ac5a3921ba4d5f299.setIcon(icon_3c57e23e5c0de2cd49254a615e3ff34f);
+        
+    
+            marker_91ecd5ad0643f24ac5a3921ba4d5f299.bindTooltip(
+                `<div>
+                     경희의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b541dfb623f21ddda7d3e7eb1216ddb = L.marker(
+                [37.6332906325, 127.0170543071],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9);
+        
+    
+            var icon_b51b940a8a35218c8700cc0a9b6a6c99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0b541dfb623f21ddda7d3e7eb1216ddb.setIcon(icon_b51b940a8a35218c8700cc0a9b6a6c99);
+        
+    
+            marker_0b541dfb623f21ddda7d3e7eb1216ddb.bindTooltip(
+                `<div>
+                     국립정신건강센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4e27557c37d0d3d959b72c61a0f22f0 = L.marker(
+                [37.5900733792, 126.997633355],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9);
+        
+    
+            var icon_66888d2131998f0459ce4c19922ebd5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d4e27557c37d0d3d959b72c61a0f22f0.setIcon(icon_66888d2131998f0459ce4c19922ebd5b);
+        
+    
+            marker_d4e27557c37d0d3d959b72c61a0f22f0.bindTooltip(
+                `<div>
+                     서울대병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3775e0743037005bca390a2374d22f87 = L.marker(
+                [37.5828910397, 127.0048184257],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9);
+        
+    
+            var icon_2eb87e00867e08cff0b237aff491b962 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3775e0743037005bca390a2374d22f87.setIcon(icon_2eb87e00867e08cff0b237aff491b962);
+        
+    
+            marker_3775e0743037005bca390a2374d22f87.bindTooltip(
+                `<div>
+                     서울의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b66fdd40b663cddc79bc09fa80f55de3 = L.marker(
+                [37.6027106641, 127.0395333474],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9);
+        
+    
+            var icon_272772fe3860693a1e60b5e4b06cf972 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b66fdd40b663cddc79bc09fa80f55de3.setIcon(icon_272772fe3860693a1e60b5e4b06cf972);
+        
+    
+            marker_b66fdd40b663cddc79bc09fa80f55de3.bindTooltip(
+                `<div>
+                     성북구 정신건강복지센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eddbe9d2bbdcc6b80ddd03403800e33c = L.marker(
+                [37.6041282792, 127.0370431152],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9);
+        
+    
+            var icon_197d4cf77af191becd07ab3493ea5aff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eddbe9d2bbdcc6b80ddd03403800e33c.setIcon(icon_197d4cf77af191becd07ab3493ea5aff);
+        
+    
+            marker_eddbe9d2bbdcc6b80ddd03403800e33c.bindTooltip(
+                `<div>
+                     성북구자살예방센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_sub_group_b83f330a6c423d530723191ff19f51d1 = L.featureGroup.subGroup(
+                marker_cluster_0e7380614360a9a57150d3f649bc5dcd
+            );
+            feature_group_sub_group_b83f330a6c423d530723191ff19f51d1.addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+    
+            var marker_490a4887ededa35d77e5477f55a99d82 = L.marker(
+                [37.6023537218, 126.9589709966],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_10883c862f692e130fcecfddb1fad812 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_490a4887ededa35d77e5477f55a99d82.setIcon(icon_10883c862f692e130fcecfddb1fad812);
+        
+    
+            marker_490a4887ededa35d77e5477f55a99d82.bindTooltip(
+                `<div>
+                     다정이네
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87593e0c2214f731463ddb86f307d2f3 = L.marker(
+                [37.5907688493, 127.0174578775],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_5115ea3ac04048038eabd596b39e7731 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87593e0c2214f731463ddb86f307d2f3.setIcon(icon_5115ea3ac04048038eabd596b39e7731);
+        
+    
+            marker_87593e0c2214f731463ddb86f307d2f3.bindTooltip(
+                `<div>
+                     다함정신건강 상담센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09c52392daff5c8b491ae1e84b0501d5 = L.marker(
+                [37.586651112, 127.0536981437],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_951fd704565becd88b552a05f946f83f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09c52392daff5c8b491ae1e84b0501d5.setIcon(icon_951fd704565becd88b552a05f946f83f);
+        
+    
+            marker_09c52392daff5c8b491ae1e84b0501d5.bindTooltip(
+                `<div>
+                     마인드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85ab8a6a504b40161847d8cc425ee9e2 = L.marker(
+                [37.6476432626, 127.0186098645],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_4b32e540220c2a86ade962bd881263b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_85ab8a6a504b40161847d8cc425ee9e2.setIcon(icon_4b32e540220c2a86ade962bd881263b0);
+        
+    
+            marker_85ab8a6a504b40161847d8cc425ee9e2.bindTooltip(
+                `<div>
+                     소담
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4297a9c45bccd048b834eac9dd12fce1 = L.marker(
+                [37.6324874739, 127.0220655105],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_73b95d61b91e6fe2ed5f3e25440aabab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4297a9c45bccd048b834eac9dd12fce1.setIcon(icon_73b95d61b91e6fe2ed5f3e25440aabab);
+        
+    
+            marker_4297a9c45bccd048b834eac9dd12fce1.bindTooltip(
+                `<div>
+                     아름다운교회 사랑의집
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cbcdadb62b3820f446df35b2951844f = L.marker(
+                [37.6530856792, 127.0216154855],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_d09f05cdb6ce7853f6191139445a9807 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2cbcdadb62b3820f446df35b2951844f.setIcon(icon_d09f05cdb6ce7853f6191139445a9807);
+        
+    
+            marker_2cbcdadb62b3820f446df35b2951844f.bindTooltip(
+                `<div>
+                     예스홈
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc8e54b4656d47903774aa880f159262 = L.marker(
+                [37.5717063998, 127.007613355],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_fec7c34c0ccc7029f3e66003fe7dcf7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc8e54b4656d47903774aa880f159262.setIcon(icon_fec7c34c0ccc7029f3e66003fe7dcf7b);
+        
+    
+            marker_fc8e54b4656d47903774aa880f159262.bindTooltip(
+                `<div>
+                     종로 행복일굼터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63c2162eaf4f69dd3f40155f6f4cb24a = L.marker(
+                [37.5840274363, 126.9699742758],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_39f895120951c029470a291ff6fd02ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63c2162eaf4f69dd3f40155f6f4cb24a.setIcon(icon_39f895120951c029470a291ff6fd02ee);
+        
+    
+            marker_63c2162eaf4f69dd3f40155f6f4cb24a.bindTooltip(
+                `<div>
+                     종로아이존
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78be0d7b2240f253c949100b9451a687 = L.marker(
+                [37.6306764286, 127.0267298078],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_7bbee7b97e06b0198ce441cef54c8d42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78be0d7b2240f253c949100b9451a687.setIcon(icon_7bbee7b97e06b0198ce441cef54c8d42);
+        
+    
+            marker_78be0d7b2240f253c949100b9451a687.bindTooltip(
+                `<div>
+                     푸른존
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_101880d8559865eacbf8716d2ecd5b84 = L.marker(
+                [37.6062990491, 127.0116292263],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_65b4db5d424a34412519fde10f6b252a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_101880d8559865eacbf8716d2ecd5b84.setIcon(icon_65b4db5d424a34412519fde10f6b252a);
+        
+    
+            marker_101880d8559865eacbf8716d2ecd5b84.bindTooltip(
+                `<div>
+                     한울림
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32b9af6ced86ee9b2a194599090e6a11 = L.marker(
+                [37.6462537482, 127.0228147154],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_b83f330a6c423d530723191ff19f51d1);
+        
+    
+            var icon_3b3439112145dcc77dde85293d8471d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32b9af6ced86ee9b2a194599090e6a11.setIcon(icon_3b3439112145dcc77dde85293d8471d2);
+        
+    
+            marker_32b9af6ced86ee9b2a194599090e6a11.bindTooltip(
+                `<div>
+                     행복을 만드는 집
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448 = L.featureGroup.subGroup(
+                marker_cluster_0e7380614360a9a57150d3f649bc5dcd
+            );
+            feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448.addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+    
+            var marker_bc9f8d8951c32a1a0fb1859d7b3abcac = L.marker(
+                [37.5941195, 127.051852],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_9b9c56b07bd2fb308094e798fc9c7e46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_bc9f8d8951c32a1a0fb1859d7b3abcac.setIcon(icon_9b9c56b07bd2fb308094e798fc9c7e46);
+        
+    
+            marker_bc9f8d8951c32a1a0fb1859d7b3abcac.bindTooltip(
+                `<div>
+                     경희대학교병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_308b488eb277dd67662fcf3ad65ed57f = L.marker(
+                [37.5797151, 126.9990168],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_d450994056f28768366baa71d8d88ee1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_308b488eb277dd67662fcf3ad65ed57f.setIcon(icon_d450994056f28768366baa71d8d88ee1);
+        
+    
+            marker_308b488eb277dd67662fcf3ad65ed57f.bindTooltip(
+                `<div>
+                     서울대학교병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85f8b4ddfc16f1a1901ee25cd457b3a5 = L.marker(
+                [37.5870165, 127.0263537],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_976cfcae47a2f0cd4888530ae038784f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_85f8b4ddfc16f1a1901ee25cd457b3a5.setIcon(icon_976cfcae47a2f0cd4888530ae038784f);
+        
+    
+            marker_85f8b4ddfc16f1a1901ee25cd457b3a5.bindTooltip(
+                `<div>
+                     학교법인 고려중앙학원 고려대학교의과대학부속병원(안암병원)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0aaea81694612b1f415e0275f411b042 = L.marker(
+                [37.5672138, 127.005671],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_698756312ec42d915e665fc78d2710ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_0aaea81694612b1f415e0275f411b042.setIcon(icon_698756312ec42d915e665fc78d2710ea);
+        
+    
+            marker_0aaea81694612b1f415e0275f411b042.bindTooltip(
+                `<div>
+                     국립중앙의료원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab7f7da8acef2dad76dcb6e03c8b490f = L.marker(
+                [37.5843076, 127.0497296],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_81ef4b871f085ff5423b04f919874c94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ab7f7da8acef2dad76dcb6e03c8b490f.setIcon(icon_81ef4b871f085ff5423b04f919874c94);
+        
+    
+            marker_ab7f7da8acef2dad76dcb6e03c8b490f.bindTooltip(
+                `<div>
+                     서울성심병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_002ab40838160bcc5017cfa5f00d17e6 = L.marker(
+                [37.5753681, 127.031341],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_9abab3c78e2326b6f09eef93956b7dd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_002ab40838160bcc5017cfa5f00d17e6.setIcon(icon_9abab3c78e2326b6f09eef93956b7dd4);
+        
+    
+            marker_002ab40838160bcc5017cfa5f00d17e6.bindTooltip(
+                `<div>
+                     서울특별시 동부병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84ce5db2e5d5f28b868e23d7f7bc359f = L.marker(
+                [37.6461401, 127.0291228],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_f85ff5929790d31daa471d00fc47233f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_84ce5db2e5d5f28b868e23d7f7bc359f.setIcon(icon_f85ff5929790d31daa471d00fc47233f);
+        
+    
+            marker_84ce5db2e5d5f28b868e23d7f7bc359f.bindTooltip(
+                `<div>
+                     의료법인한전의료재단 한일병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d075288894586d466eabe2dd5efae974 = L.marker(
+                [37.6388781, 127.0105162],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_c21c73620d23cd9f535f01fa9c80d22b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d075288894586d466eabe2dd5efae974.setIcon(icon_c21c73620d23cd9f535f01fa9c80d22b);
+        
+    
+            marker_d075288894586d466eabe2dd5efae974.bindTooltip(
+                `<div>
+                     국립재활원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd23ca1fee170ec52270de336603efea = L.marker(
+                [37.6069387, 127.0307411],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_07045e3bfb59be329d58618d373d16bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fd23ca1fee170ec52270de336603efea.setIcon(icon_07045e3bfb59be329d58618d373d16bc);
+        
+    
+            marker_fd23ca1fee170ec52270de336603efea.bindTooltip(
+                `<div>
+                     사회복지법인 성가소비녀회 성가복지병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03e2cf640b6efbdc5ab6464f9133f0c6 = L.marker(
+                [37.6068633, 127.0293592],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_7f1589dfb03952debe00df083b3f8343 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_03e2cf640b6efbdc5ab6464f9133f0c6.setIcon(icon_7f1589dfb03952debe00df083b3f8343);
+        
+    
+            marker_03e2cf640b6efbdc5ab6464f9133f0c6.bindTooltip(
+                `<div>
+                     성북우리아이들병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96969096130f5ce4a9c2c96f6d19c4f5 = L.marker(
+                [37.5976225, 127.0051764],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_ced01eab3f3d3cb7d3f24f192312321e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_96969096130f5ce4a9c2c96f6d19c4f5.setIcon(icon_ced01eab3f3d3cb7d3f24f192312321e);
+        
+    
+            marker_96969096130f5ce4a9c2c96f6d19c4f5.bindTooltip(
+                `<div>
+                     의료법인참예원의료재단 성북참요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_960dd9766cdf72216d8c3243ebbf91df = L.marker(
+                [37.6322981, 127.0241779],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_90a52b7882c34528651bbc29963fda93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_960dd9766cdf72216d8c3243ebbf91df.setIcon(icon_90a52b7882c34528651bbc29963fda93);
+        
+    
+            marker_960dd9766cdf72216d8c3243ebbf91df.bindTooltip(
+                `<div>
+                     포근한요양병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0a32166adeba851f8c18df1710a067e = L.marker(
+                [37.5773943, 127.0379409],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_f7c50fdb075dc25bf945ebd836d8f92c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a0a32166adeba851f8c18df1710a067e.setIcon(icon_f7c50fdb075dc25bf945ebd836d8f92c);
+        
+    
+            marker_a0a32166adeba851f8c18df1710a067e.bindTooltip(
+                `<div>
+                     서울명병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50893d6c795e6facc36848fa83cbdb76 = L.marker(
+                [37.5808179, 127.0447366],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_aa3bc08153df6cb5e2d1fb131e010390 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_50893d6c795e6facc36848fa83cbdb76.setIcon(icon_aa3bc08153df6cb5e2d1fb131e010390);
+        
+    
+            marker_50893d6c795e6facc36848fa83cbdb76.bindTooltip(
+                `<div>
+                     강신삼신경정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8dba2e2955c97486eb5717862bf9171 = L.marker(
+                [37.6367983, 127.0248586],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_4d199872661a4c2c538286eb40b78fcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a8dba2e2955c97486eb5717862bf9171.setIcon(icon_4d199872661a4c2c538286eb40b78fcc);
+        
+    
+            marker_a8dba2e2955c97486eb5717862bf9171.bindTooltip(
+                `<div>
+                     같은마음정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06157fb251d5d58bdf89f8d89756dd7d = L.marker(
+                [37.6315193, 127.0362354],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_55bed87ab031ed6ac7725dafca3cfd17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_06157fb251d5d58bdf89f8d89756dd7d.setIcon(icon_55bed87ab031ed6ac7725dafca3cfd17);
+        
+    
+            marker_06157fb251d5d58bdf89f8d89756dd7d.bindTooltip(
+                `<div>
+                     건강의집 의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd9f2b2c684ff8adb6d7ae9524685819 = L.marker(
+                [37.571881, 126.9794965],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_f088fccc21c4bea7dfe672bcf39dca46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_bd9f2b2c684ff8adb6d7ae9524685819.setIcon(icon_f088fccc21c4bea7dfe672bcf39dca46);
+        
+    
+            marker_bd9f2b2c684ff8adb6d7ae9524685819.bindTooltip(
+                `<div>
+                     광화문숲정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df5406037c6589e9e5b1ca9f5f91c7be = L.marker(
+                [37.6026982, 127.0236736],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_a20b0bc6434e254dbf4022c042bed652 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_df5406037c6589e9e5b1ca9f5f91c7be.setIcon(icon_a20b0bc6434e254dbf4022c042bed652);
+        
+    
+            marker_df5406037c6589e9e5b1ca9f5f91c7be.bindTooltip(
+                `<div>
+                     굿모닝이비인후과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_edbe40ae3576df89e484738cfdefc2d0 = L.marker(
+                [37.6369413, 127.0241153],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_04bfe715f7ef81437354af1c301ddebe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_edbe40ae3576df89e484738cfdefc2d0.setIcon(icon_04bfe715f7ef81437354af1c301ddebe);
+        
+    
+            marker_edbe40ae3576df89e484738cfdefc2d0.bindTooltip(
+                `<div>
+                     김영우정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9651d466ee299d518106fb4d2fb17e62 = L.marker(
+                [37.6027225, 127.0417908],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_f797040b39c59f047f49320b7f935fb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9651d466ee299d518106fb4d2fb17e62.setIcon(icon_f797040b39c59f047f49320b7f935fb1);
+        
+    
+            marker_9651d466ee299d518106fb4d2fb17e62.bindTooltip(
+                `<div>
+                     노신경외과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d49ef67db0269e6f278a358159db4851 = L.marker(
+                [37.6408589, 127.0190284],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_8d4364dab894da2d49f2cad9f1a9a26e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d49ef67db0269e6f278a358159db4851.setIcon(icon_8d4364dab894da2d49f2cad9f1a9a26e);
+        
+    
+            marker_d49ef67db0269e6f278a358159db4851.bindTooltip(
+                `<div>
+                     늘푸른연세의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_670e2e42d831cfd4d19a94954fd2cc76 = L.marker(
+                [37.5910098, 127.0532645],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_f0eed185f73863b8db3489df59029e22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_670e2e42d831cfd4d19a94954fd2cc76.setIcon(icon_f0eed185f73863b8db3489df59029e22);
+        
+    
+            marker_670e2e42d831cfd4d19a94954fd2cc76.bindTooltip(
+                `<div>
+                     더봄정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed687564e2a77a92e87ad8484bbc6fe8 = L.marker(
+                [37.5799461, 126.9814861],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_732e0637b0d993f3f3291f3608211f38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ed687564e2a77a92e87ad8484bbc6fe8.setIcon(icon_732e0637b0d993f3f3291f3608211f38);
+        
+    
+            marker_ed687564e2a77a92e87ad8484bbc6fe8.bindTooltip(
+                `<div>
+                     동남정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66e3dd998c53bdb476c5596dac366dcd = L.marker(
+                [37.588853, 127.0065156],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_26dca4698d98b759fac7ec35f7b74230 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_66e3dd998c53bdb476c5596dac366dcd.setIcon(icon_26dca4698d98b759fac7ec35f7b74230);
+        
+    
+            marker_66e3dd998c53bdb476c5596dac366dcd.bindTooltip(
+                `<div>
+                     동호의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f2f98ff199455434c1de221d23d832e = L.marker(
+                [37.5752833, 127.037781],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_0093092b384d384ec182d4bb60a3b317 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7f2f98ff199455434c1de221d23d832e.setIcon(icon_0093092b384d384ec182d4bb60a3b317);
+        
+    
+            marker_7f2f98ff199455434c1de221d23d832e.bindTooltip(
+                `<div>
+                     마음과마음정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f016f192162fd0750b6d0cd7ad4524d = L.marker(
+                [37.6375561, 127.0247171],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_3db0ac241baa59e7e2e6bb49861795e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6f016f192162fd0750b6d0cd7ad4524d.setIcon(icon_3db0ac241baa59e7e2e6bb49861795e6);
+        
+    
+            marker_6f016f192162fd0750b6d0cd7ad4524d.bindTooltip(
+                `<div>
+                     마음벗김종범정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdc145fc618c755525b75c124def6709 = L.marker(
+                [37.610739, 127.0196773],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_0c743b982410e3f46d3d77c26476193d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fdc145fc618c755525b75c124def6709.setIcon(icon_0c743b982410e3f46d3d77c26476193d);
+        
+    
+            marker_fdc145fc618c755525b75c124def6709.bindTooltip(
+                `<div>
+                     맑은성모이비인후과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01946b0fb53e8fd40a9eab34625e0d19 = L.marker(
+                [37.5839822, 127.0020846],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_4a8ccb443f9eb78411361bc29c33b86c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_01946b0fb53e8fd40a9eab34625e0d19.setIcon(icon_4a8ccb443f9eb78411361bc29c33b86c);
+        
+    
+            marker_01946b0fb53e8fd40a9eab34625e0d19.bindTooltip(
+                `<div>
+                     명륜신경정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfeb4cccf477eee56ee9e9e7395275d1 = L.marker(
+                [37.5941649, 127.0182308],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_0844bbb83160f3aab1546e3582093f9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_dfeb4cccf477eee56ee9e9e7395275d1.setIcon(icon_0844bbb83160f3aab1546e3582093f9c);
+        
+    
+            marker_dfeb4cccf477eee56ee9e9e7395275d1.bindTooltip(
+                `<div>
+                     무지개정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eadbab9a725ad183432adf8de38829c6 = L.marker(
+                [37.6125873, 127.0304487],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_46a8b3ddcb7b6f0197a48dc3338d9039 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_eadbab9a725ad183432adf8de38829c6.setIcon(icon_46a8b3ddcb7b6f0197a48dc3338d9039);
+        
+    
+            marker_eadbab9a725ad183432adf8de38829c6.bindTooltip(
+                `<div>
+                     미아정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea91b016d662a5311d624a4cc9686d70 = L.marker(
+                [37.6378733, 127.0250751],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_afdb9dcbe0dccd45cc51b3fab8ed99a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ea91b016d662a5311d624a4cc9686d70.setIcon(icon_afdb9dcbe0dccd45cc51b3fab8ed99a7);
+        
+    
+            marker_ea91b016d662a5311d624a4cc9686d70.bindTooltip(
+                `<div>
+                     바로굿정형외과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6a8b807953eb21ae7c4585fa5c67150 = L.marker(
+                [37.577417, 127.0283538],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_8976e811bb8152a36c88502b076ec82f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e6a8b807953eb21ae7c4585fa5c67150.setIcon(icon_8976e811bb8152a36c88502b076ec82f);
+        
+    
+            marker_e6a8b807953eb21ae7c4585fa5c67150.bindTooltip(
+                `<div>
+                     박신경정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92c83c7ef9d0c1b2e6ac23ca845b8c99 = L.marker(
+                [37.5665223, 126.9997513],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_7c252395187b8563e9b0952302d6716e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_92c83c7ef9d0c1b2e6ac23ca845b8c99.setIcon(icon_7c252395187b8563e9b0952302d6716e);
+        
+    
+            marker_92c83c7ef9d0c1b2e6ac23ca845b8c99.bindTooltip(
+                `<div>
+                     박주형신경정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_719f39d39112ae526799458057e9b5b8 = L.marker(
+                [37.6371282, 127.0252103],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_cb72af88e5d45b16afae6235c8fe757e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_719f39d39112ae526799458057e9b5b8.setIcon(icon_cb72af88e5d45b16afae6235c8fe757e);
+        
+    
+            marker_719f39d39112ae526799458057e9b5b8.bindTooltip(
+                `<div>
+                     박희관정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_576ad4b5533f9a6be2d0406f544bba00 = L.marker(
+                [37.5921783, 127.0155017],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_40ecc2217f1653db98ff7c48c09b11f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_576ad4b5533f9a6be2d0406f544bba00.setIcon(icon_40ecc2217f1653db98ff7c48c09b11f9);
+        
+    
+            marker_576ad4b5533f9a6be2d0406f544bba00.bindTooltip(
+                `<div>
+                     베드로신경정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae16f7616588008e20327ae66976882c = L.marker(
+                [37.5905268, 127.0555113],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_da3f081b4551962496c78b19992581b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ae16f7616588008e20327ae66976882c.setIcon(icon_da3f081b4551962496c78b19992581b3);
+        
+    
+            marker_ae16f7616588008e20327ae66976882c.bindTooltip(
+                `<div>
+                     사랑내과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47091f2b246166342e65e60c3ed072f1 = L.marker(
+                [37.6116629, 127.0307165],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_c300754c1bb3560c1cbc350a81dca361 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_47091f2b246166342e65e60c3ed072f1.setIcon(icon_c300754c1bb3560c1cbc350a81dca361);
+        
+    
+            marker_47091f2b246166342e65e60c3ed072f1.bindTooltip(
+                `<div>
+                     사랑샘터정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9aabb10ad89d762d72cd40f1d5c8efff = L.marker(
+                [37.6183775, 127.0251268],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_d196f09c0dc82bda0f22dd48a89fbf72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9aabb10ad89d762d72cd40f1d5c8efff.setIcon(icon_d196f09c0dc82bda0f22dd48a89fbf72);
+        
+    
+            marker_9aabb10ad89d762d72cd40f1d5c8efff.bindTooltip(
+                `<div>
+                     삼양박가정의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_269a5d512cff936c29dadcdc32fc43ae = L.marker(
+                [37.5946614, 127.0593433],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_9cafd05a4d65a00ae1e587a7f88b4ddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_269a5d512cff936c29dadcdc32fc43ae.setIcon(icon_9cafd05a4d65a00ae1e587a7f88b4ddb);
+        
+    
+            marker_269a5d512cff936c29dadcdc32fc43ae.bindTooltip(
+                `<div>
+                     서울베스트정형외과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08019e03fd375fdaa634a30666909064 = L.marker(
+                [37.6371305, 127.0242171],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_a3d61025ec3b981b23cf5e456a7135cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_08019e03fd375fdaa634a30666909064.setIcon(icon_a3d61025ec3b981b23cf5e456a7135cf);
+        
+    
+            marker_08019e03fd375fdaa634a30666909064.bindTooltip(
+                `<div>
+                     서울에이치내과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_615afc587e641c65f0ea4df966780fb1 = L.marker(
+                [37.5832359, 127.0436475],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_3cca1196061fc0487dd02b85859fa7d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_615afc587e641c65f0ea4df966780fb1.setIcon(icon_3cca1196061fc0487dd02b85859fa7d3);
+        
+    
+            marker_615afc587e641c65f0ea4df966780fb1.bindTooltip(
+                `<div>
+                     서울연세의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe84219feedbe09be169ec6e150f7096 = L.marker(
+                [37.6091231, 127.030975],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_936de5d2b6573a26d847854f31af2a8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fe84219feedbe09be169ec6e150f7096.setIcon(icon_936de5d2b6573a26d847854f31af2a8f);
+        
+    
+            marker_fe84219feedbe09be169ec6e150f7096.bindTooltip(
+                `<div>
+                     서울탑정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_878a100f76b075f54d8a3aa1a3515189 = L.marker(
+                [37.5784573, 127.0375326],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_5e70c90b2d3e1e2b0a7c1cc6643e20ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_878a100f76b075f54d8a3aa1a3515189.setIcon(icon_5e70c90b2d3e1e2b0a7c1cc6643e20ac);
+        
+    
+            marker_878a100f76b075f54d8a3aa1a3515189.bindTooltip(
+                `<div>
+                     서울프리마의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_825025939990f888d06d124482481fc5 = L.marker(
+                [37.5955312, 127.0598838],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_955063aba882904d9660f2ef95aa4ee0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_825025939990f888d06d124482481fc5.setIcon(icon_955063aba882904d9660f2ef95aa4ee0);
+        
+    
+            marker_825025939990f888d06d124482481fc5.bindTooltip(
+                `<div>
+                     서울현정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_582bb3b7fa0219b34ec05f0d9989f9a3 = L.marker(
+                [37.5788729, 126.9730482],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_26b9e9a2af052f2dcd1f4e0206bb69c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_582bb3b7fa0219b34ec05f0d9989f9a3.setIcon(icon_26b9e9a2af052f2dcd1f4e0206bb69c2);
+        
+    
+            marker_582bb3b7fa0219b34ec05f0d9989f9a3.bindTooltip(
+                `<div>
+                     서촌정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe212d74df50518898749d7dc2dd3508 = L.marker(
+                [37.6146935, 127.0634983],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_f430478da1b89b3ee1deedb292b8e8cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fe212d74df50518898749d7dc2dd3508.setIcon(icon_f430478da1b89b3ee1deedb292b8e8cc);
+        
+    
+            marker_fe212d74df50518898749d7dc2dd3508.bindTooltip(
+                `<div>
+                     석계정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cba86a9ad9be7e93138441a99a1a369b = L.marker(
+                [37.5854723, 127.0432673],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_d74e5fcc5069ad5abae847e46e091d0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_cba86a9ad9be7e93138441a99a1a369b.setIcon(icon_d74e5fcc5069ad5abae847e46e091d0f);
+        
+    
+            marker_cba86a9ad9be7e93138441a99a1a369b.bindTooltip(
+                `<div>
+                     설연합내과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33bed1f81db36d14b77330120d1ae5cc = L.marker(
+                [37.5922613, 127.0171152],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_41b8a532b896c09e8e54c127783c9d34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_33bed1f81db36d14b77330120d1ae5cc.setIcon(icon_41b8a532b896c09e8e54c127783c9d34);
+        
+    
+            marker_33bed1f81db36d14b77330120d1ae5cc.bindTooltip(
+                `<div>
+                     성북아이정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92dab82b11edca79a7291beef2ec96e1 = L.marker(
+                [37.5707748, 127.006104],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_3944b0edb2ec0660ccccbe41b56e5abf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_92dab82b11edca79a7291beef2ec96e1.setIcon(icon_3944b0edb2ec0660ccccbe41b56e5abf);
+        
+    
+            marker_92dab82b11edca79a7291beef2ec96e1.bindTooltip(
+                `<div>
+                     성원의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57cf5541842410262d946ec4558a1b3f = L.marker(
+                [37.5720998, 126.9854105],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_a47a18e60cc598b6bdb468615419240f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_57cf5541842410262d946ec4558a1b3f.setIcon(icon_a47a18e60cc598b6bdb468615419240f);
+        
+    
+            marker_57cf5541842410262d946ec4558a1b3f.bindTooltip(
+                `<div>
+                     송신경정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_142dfc64fdb6c13bb2dfe71b3537cbf9 = L.marker(
+                [37.6280577, 127.0251108],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_1561a36a1a6c6578f2eef2d0c8c98539 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_142dfc64fdb6c13bb2dfe71b3537cbf9.setIcon(icon_1561a36a1a6c6578f2eef2d0c8c98539);
+        
+    
+            marker_142dfc64fdb6c13bb2dfe71b3537cbf9.bindTooltip(
+                `<div>
+                     시원내과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_237366422822b978a38af7c202d6e55f = L.marker(
+                [37.6094256, 127.0298602],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_c44939c078c14d1062f9e385ff24d6ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_237366422822b978a38af7c202d6e55f.setIcon(icon_c44939c078c14d1062f9e385ff24d6ed);
+        
+    
+            marker_237366422822b978a38af7c202d6e55f.bindTooltip(
+                `<div>
+                     아린정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6e1b3b200edb29b35ef0bbf2d2338f8 = L.marker(
+                [37.5692575, 127.0248134],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_34e2446bb9ebb7bd2b9c766d93d3ec6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b6e1b3b200edb29b35ef0bbf2d2338f8.setIcon(icon_34e2446bb9ebb7bd2b9c766d93d3ec6a);
+        
+    
+            marker_b6e1b3b200edb29b35ef0bbf2d2338f8.bindTooltip(
+                `<div>
+                     아이앤아이의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ebf2a26da8c9509a4cd31cb7b28fdcb = L.marker(
+                [37.5848008, 127.0008571],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_169e181c9776701ef10439384b9b97cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9ebf2a26da8c9509a4cd31cb7b28fdcb.setIcon(icon_169e181c9776701ef10439384b9b97cd);
+        
+    
+            marker_9ebf2a26da8c9509a4cd31cb7b28fdcb.bindTooltip(
+                `<div>
+                     연세반디정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21bccd4103a9f165d3c3a5036c368e0d = L.marker(
+                [37.6104155, 127.0569262],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_42051e699c0e1cbae2fa5175b86d1e18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_21bccd4103a9f165d3c3a5036c368e0d.setIcon(icon_42051e699c0e1cbae2fa5175b86d1e18);
+        
+    
+            marker_21bccd4103a9f165d3c3a5036c368e0d.bindTooltip(
+                `<div>
+                     연세속편한의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a46577fecc3f8df1f6505b0f538fd20 = L.marker(
+                [37.573106, 127.0148389],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_8dd019cdcb121362b63327a884c0279b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9a46577fecc3f8df1f6505b0f538fd20.setIcon(icon_8dd019cdcb121362b63327a884c0279b);
+        
+    
+            marker_9a46577fecc3f8df1f6505b0f538fd20.bindTooltip(
+                `<div>
+                     연세정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4e1711c18dd494be91973d90ef58770 = L.marker(
+                [37.5820549, 127.0471638],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_33d4dc949cfd8caca3a0ed935844841e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e4e1711c18dd494be91973d90ef58770.setIcon(icon_33d4dc949cfd8caca3a0ed935844841e);
+        
+    
+            marker_e4e1711c18dd494be91973d90ef58770.bindTooltip(
+                `<div>
+                     연세참이비인후과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e640e20717bac4d52efc8b9637f8c32f = L.marker(
+                [37.5708345, 126.9798606],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_8b676cf2fefc3b6a07842b071844d933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e640e20717bac4d52efc8b9637f8c32f.setIcon(icon_8b676cf2fefc3b6a07842b071844d933);
+        
+    
+            marker_e640e20717bac4d52efc8b9637f8c32f.bindTooltip(
+                `<div>
+                     연세필정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c654e2166f6b9bdf47c0de1773152553 = L.marker(
+                [37.5901847, 127.0147927],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_465ceff14ff30d7f7a21dcce3e0fe1e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c654e2166f6b9bdf47c0de1773152553.setIcon(icon_465ceff14ff30d7f7a21dcce3e0fe1e6);
+        
+    
+            marker_c654e2166f6b9bdf47c0de1773152553.bindTooltip(
+                `<div>
+                     예온정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce72c84eeb3412434618575c01c58e80 = L.marker(
+                [37.5787365, 127.0418316],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_da835393a52191c9a80f3fe56a10eeb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ce72c84eeb3412434618575c01c58e80.setIcon(icon_da835393a52191c9a80f3fe56a10eeb7);
+        
+    
+            marker_ce72c84eeb3412434618575c01c58e80.bindTooltip(
+                `<div>
+                     오정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fd53a144872e3d30cfc287afa8ff1bc = L.marker(
+                [37.6062227, 127.0148543],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_6efd5e3c0922c55f67f0223e6ec6e84b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8fd53a144872e3d30cfc287afa8ff1bc.setIcon(icon_6efd5e3c0922c55f67f0223e6ec6e84b);
+        
+    
+            marker_8fd53a144872e3d30cfc287afa8ff1bc.bindTooltip(
+                `<div>
+                     우리의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_804186ccb6c2657d309fbe3ba7465b29 = L.marker(
+                [37.6098478, 127.0578337],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_0b0925f854d3281f5032dbb4d3706cfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_804186ccb6c2657d309fbe3ba7465b29.setIcon(icon_0b0925f854d3281f5032dbb4d3706cfd);
+        
+    
+            marker_804186ccb6c2657d309fbe3ba7465b29.bindTooltip(
+                `<div>
+                     우성연합의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0fccf4c96e1199803406c3b4c9bf9bb = L.marker(
+                [37.5728317, 127.0142205],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_8e28ef0e1ed848542cdec7deea076568 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c0fccf4c96e1199803406c3b4c9bf9bb.setIcon(icon_8e28ef0e1ed848542cdec7deea076568);
+        
+    
+            marker_c0fccf4c96e1199803406c3b4c9bf9bb.bindTooltip(
+                `<div>
+                     우행원신경정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f32fede47dfb7b1e019f3253edad936 = L.marker(
+                [37.5662854, 126.9962072],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_d809b39befc3532bd4555484670c700b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5f32fede47dfb7b1e019f3253edad936.setIcon(icon_d809b39befc3532bd4555484670c700b);
+        
+    
+            marker_5f32fede47dfb7b1e019f3253edad936.bindTooltip(
+                `<div>
+                     을지로참내과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f8cce644c1fb3c39b91753596558e01 = L.marker(
+                [37.5710023, 126.981484],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_c21703c0c496b5065fccdcc92e55cd75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_1f8cce644c1fb3c39b91753596558e01.setIcon(icon_c21703c0c496b5065fccdcc92e55cd75);
+        
+    
+            marker_1f8cce644c1fb3c39b91753596558e01.bindTooltip(
+                `<div>
+                     의료법인하나로의료재단하나로의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60ad6bf05ca641816e65d48aa9bc47f1 = L.marker(
+                [37.5853665, 127.0292712],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_a8221b73897d745d2b2606cd22dd7ec1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_60ad6bf05ca641816e65d48aa9bc47f1.setIcon(icon_a8221b73897d745d2b2606cd22dd7ec1);
+        
+    
+            marker_60ad6bf05ca641816e65d48aa9bc47f1.bindTooltip(
+                `<div>
+                     이민수정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e0fe9bed2077ae90aebd044338a2ef2 = L.marker(
+                [37.5792824, 127.043031],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_0f3f477695514de2bdd5b66139818f4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6e0fe9bed2077ae90aebd044338a2ef2.setIcon(icon_0f3f477695514de2bdd5b66139818f4b);
+        
+    
+            marker_6e0fe9bed2077ae90aebd044338a2ef2.bindTooltip(
+                `<div>
+                     이성주정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f1d0b74b60bc64cdc37c5db53f4c503 = L.marker(
+                [37.5864858, 127.0005319],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_db16e4b3033f66c777ecd5a9dd1f7fd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9f1d0b74b60bc64cdc37c5db53f4c503.setIcon(icon_db16e4b3033f66c777ecd5a9dd1f7fd7);
+        
+    
+            marker_9f1d0b74b60bc64cdc37c5db53f4c503.bindTooltip(
+                `<div>
+                     임계원정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_578feb350b5217873973e3ae08214e45 = L.marker(
+                [37.5754969, 127.0223428],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_f32b59331c1ea0268ecfcd1912f0ecf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_578feb350b5217873973e3ae08214e45.setIcon(icon_f32b59331c1ea0268ecfcd1912f0ecf6);
+        
+    
+            marker_578feb350b5217873973e3ae08214e45.bindTooltip(
+                `<div>
+                     장경호가정의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b62e6de8c3c52f2efdb74fed6761ee72 = L.marker(
+                [37.5840824, 126.9698335],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_915c0054d3d15fcaa93a99f13297edee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b62e6de8c3c52f2efdb74fed6761ee72.setIcon(icon_915c0054d3d15fcaa93a99f13297edee);
+        
+    
+            marker_b62e6de8c3c52f2efdb74fed6761ee72.bindTooltip(
+                `<div>
+                     재단법인푸르메 푸르메의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d9989987e58bbed8be45309fc1d924b = L.marker(
+                [37.6426971, 127.0303347],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_7e3c17e74f3f94717b1d454efedc2212 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5d9989987e58bbed8be45309fc1d924b.setIcon(icon_7e3c17e74f3f94717b1d454efedc2212);
+        
+    
+            marker_5d9989987e58bbed8be45309fc1d924b.bindTooltip(
+                `<div>
+                     전종호정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e8ec5c5d06e468ee10210982ded0aec = L.marker(
+                [37.6478854, 127.0348005],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_734495a90b277950e83760410ff64ba8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5e8ec5c5d06e468ee10210982ded0aec.setIcon(icon_734495a90b277950e83760410ff64ba8);
+        
+    
+            marker_5e8ec5c5d06e468ee10210982ded0aec.bindTooltip(
+                `<div>
+                     전지홍정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f9a2a40c9561679eb935e6a78708d21 = L.marker(
+                [37.6081881, 127.0098725],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_3e6da6689a412b7c85cd50c23725ecf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2f9a2a40c9561679eb935e6a78708d21.setIcon(icon_3e6da6689a412b7c85cd50c23725ecf2);
+        
+    
+            marker_2f9a2a40c9561679eb935e6a78708d21.bindTooltip(
+                `<div>
+                     정릉손정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55f519f386a7b3082e0ec117101cafdb = L.marker(
+                [37.5892771, 127.00848],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_c04c92fddc9574c372db670a1c9e6baf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_55f519f386a7b3082e0ec117101cafdb.setIcon(icon_c04c92fddc9574c372db670a1c9e6baf);
+        
+    
+            marker_55f519f386a7b3082e0ec117101cafdb.bindTooltip(
+                `<div>
+                     정성철정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dbce6382c587abe405d7939aa6e4070 = L.marker(
+                [37.610052, 127.052001],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_cb946e6e142a945ff776a64113c8f5b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_6dbce6382c587abe405d7939aa6e4070.setIcon(icon_cb946e6e142a945ff776a64113c8f5b8);
+        
+    
+            marker_6dbce6382c587abe405d7939aa6e4070.bindTooltip(
+                `<div>
+                     좋은이비인후과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d76c1832714a0d857ee813fbad0adbd7 = L.marker(
+                [37.5706765, 127.0073136],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_080c7457ba8db88d3dfcf80a2e8cc29b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d76c1832714a0d857ee813fbad0adbd7.setIcon(icon_080c7457ba8db88d3dfcf80a2e8cc29b);
+        
+    
+            marker_d76c1832714a0d857ee813fbad0adbd7.bindTooltip(
+                `<div>
+                     참다운내과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e44f43f414c61bfaf6eba0943a1e491a = L.marker(
+                [37.5823347, 127.0484097],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_1f92953196db0fd4c50e532ef8e6be6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e44f43f414c61bfaf6eba0943a1e491a.setIcon(icon_1f92953196db0fd4c50e532ef8e6be6c);
+        
+    
+            marker_e44f43f414c61bfaf6eba0943a1e491a.bindTooltip(
+                `<div>
+                     청량리정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a24e9b7411923124227a054c0db11710 = L.marker(
+                [37.5993028, 127.0182733],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_7eb64eaf52e6d3c2a840c8d2156524c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a24e9b7411923124227a054c0db11710.setIcon(icon_7eb64eaf52e6d3c2a840c8d2156524c3);
+        
+    
+            marker_a24e9b7411923124227a054c0db11710.bindTooltip(
+                `<div>
+                     키즈쑥쑥소아청소년과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9028f5d08ca820833abb5152307cb96 = L.marker(
+                [37.592798, 127.0160255],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_860172afb42d4bb2a4e4218c5817fe5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f9028f5d08ca820833abb5152307cb96.setIcon(icon_860172afb42d4bb2a4e4218c5817fe5f);
+        
+    
+            marker_f9028f5d08ca820833abb5152307cb96.bindTooltip(
+                `<div>
+                     하나정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0186f5e396e05272e062f72083b1b14 = L.marker(
+                [37.6003831, 127.0335726],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_8f9fbb4ee18c08b17270a5164495439c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e0186f5e396e05272e062f72083b1b14.setIcon(icon_8f9fbb4ee18c08b17270a5164495439c);
+        
+    
+            marker_e0186f5e396e05272e062f72083b1b14.bindTooltip(
+                `<div>
+                     해맑은이비인후과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f984ca6772a31000750676cb385de9c = L.marker(
+                [37.6131312, 127.029462],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_f74d31be1f73fa7be6b7f6de7bee212a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8f984ca6772a31000750676cb385de9c.setIcon(icon_f74d31be1f73fa7be6b7f6de7bee212a);
+        
+    
+            marker_8f984ca6772a31000750676cb385de9c.bindTooltip(
+                `<div>
+                     행복찾기정신과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e76aaafc2bbcc3aedee0e9497f83f57f = L.marker(
+                [37.6120803, 127.0307347],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_37a6237e44269f1d1a4aa7f1688ab99f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e76aaafc2bbcc3aedee0e9497f83f57f.setIcon(icon_37a6237e44269f1d1a4aa7f1688ab99f);
+        
+    
+            marker_e76aaafc2bbcc3aedee0e9497f83f57f.bindTooltip(
+                `<div>
+                     황규혁정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d0b6ced5ac1055f1e06184b547c82f4 = L.marker(
+                [37.5856941, 127.0295141],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448);
+        
+    
+            var icon_63e50f9082e0b53fa4d895dc953a0d39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7d0b6ced5ac1055f1e06184b547c82f4.setIcon(icon_63e50f9082e0b53fa4d895dc953a0d39);
+        
+    
+            marker_7d0b6ced5ac1055f1e06184b547c82f4.bindTooltip(
+                `<div>
+                     휴앤힐정신건강의학과의원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_sub_group_31b233ed018530adf02b8d24e982ae12 = L.featureGroup.subGroup(
+                marker_cluster_0e7380614360a9a57150d3f649bc5dcd
+            );
+            feature_group_sub_group_31b233ed018530adf02b8d24e982ae12.addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+    
+            var marker_d6387634d62450998cbcfac7c274bd1e = L.marker(
+                [37.6318813027, 127.039062218],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_31b233ed018530adf02b8d24e982ae12);
+        
+    
+            var icon_579f61a58a154edff8379eba0239ba4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d6387634d62450998cbcfac7c274bd1e.setIcon(icon_579f61a58a154edff8379eba0239ba4d);
+        
+    
+            marker_d6387634d62450998cbcfac7c274bd1e.bindTooltip(
+                `<div>
+                     강북구보건소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c0a37719de28f41b0a9bbc97fcab3d2 = L.marker(
+                [37.5743917162, 127.0398965801],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_31b233ed018530adf02b8d24e982ae12);
+        
+    
+            var icon_e756a782cff0ec89f1e68bca4d5583d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4c0a37719de28f41b0a9bbc97fcab3d2.setIcon(icon_e756a782cff0ec89f1e68bca4d5583d3);
+        
+    
+            marker_4c0a37719de28f41b0a9bbc97fcab3d2.bindTooltip(
+                `<div>
+                     동대문구보건소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_138231888cdb60b5f6db674999089f0c = L.marker(
+                [37.5818305315, 126.9692257994],
+                {"radius": 15}
+            ).addTo(feature_group_sub_group_31b233ed018530adf02b8d24e982ae12);
+        
+    
+            var icon_df02729fb028bb82ff26177e935fda99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_138231888cdb60b5f6db674999089f0c.setIcon(icon_df02729fb028bb82ff26177e935fda99);
+        
+    
+            marker_138231888cdb60b5f6db674999089f0c.bindTooltip(
+                `<div>
+                     종로구보건소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fc93a2b70578ae89abaec97e0295a141 = L.circle(
+                [37.6102, 127.0071],
+                {"bubblingMouseEvents": true, "color": "#ff7800", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+    
+            var marker_29f6bcda5ebaa5201491863e1291f684 = L.marker(
+                [37.6102, 127.0071],
+                {}
+            ).addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+    
+            var icon_31f8489a96a0a0432530dfea519f286e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_29f6bcda5ebaa5201491863e1291f684.setIcon(icon_31f8489a96a0a0432530dfea519f286e);
+        
+    
+        var popup_c099f8fa6efa1ce6e8c642d582eb451b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09e5e773f382d7346d4e9507c61187d4 = $(`<div id="html_09e5e773f382d7346d4e9507c61187d4" style="width: 100.0%; height: 100.0%;">현재 나의 위치</div>`)[0];
+            popup_c099f8fa6efa1ce6e8c642d582eb451b.setContent(html_09e5e773f382d7346d4e9507c61187d4);
+        
+
+        marker_29f6bcda5ebaa5201491863e1291f684.bindPopup(popup_c099f8fa6efa1ce6e8c642d582eb451b)
+        ;
+
+        
+    
+    
+            var locate_control_b6ee81464a92568b718e7eab6052ebb7 = L.control.locate(
+                {}
+            ).addTo(map_6aa90994cb39f6f136846758c6bf0253);
+            
+        
+    
+            L.Control.geocoder(
+                {"collapsed": true, "defaultMarkGeocode": true, "position": "bottomright"}
+            ).on('markgeocode', function(e) {
+                map_6aa90994cb39f6f136846758c6bf0253.setView(e.geocode.center, 11);
+            }).addTo(map_6aa90994cb39f6f136846758c6bf0253);
+
+        
+    
+            var layer_control_e8b796290b33336a51bc8aa81488abdd = {
+                base_layers : {
+                    "\uad6c\ubd84" : tile_layer_c1d6ab6e5081f8fc287b4c188a916692,
+                },
+                overlays :  {
+                    "\uc0c1\ub2f4\uc18c" : feature_group_sub_group_ef24a0ecf7088960251b00fb8fd97ec8,
+                    "\uc13c\ud130" : feature_group_sub_group_dfe7b8107b60862c80a4a83e40dd7ad9,
+                    "\uc2dc\uc124" : feature_group_sub_group_b83f330a6c423d530723191ff19f51d1,
+                    "\ubcd1\uc6d0" : feature_group_sub_group_23b9b05b75b6146d7a6563c0f458e448,
+                    "\ubcf4\uac74\uc18c" : feature_group_sub_group_31b233ed018530adf02b8d24e982ae12,
+                },
+            };
+            L.control.layers(
+                layer_control_e8b796290b33336a51bc8aa81488abdd.base_layers,
+                layer_control_e8b796290b33336a51bc8aa81488abdd.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "bottomright"}
+            ).addTo(map_6aa90994cb39f6f136846758c6bf0253);
+        
+</script>
