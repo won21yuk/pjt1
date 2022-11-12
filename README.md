@@ -89,7 +89,7 @@ Blue Shelter는 정신의료서비스의 수요자와 공급자 간의 상호소
 | 4 | 상담센터 조회 | 한국상담학회 | CRAWLING/JSON |
 
 # ERD
-![erd][/general-user-service-process/pjt1-erd.png]
+![erd](/general-user-service-process/pjt1-erd.png)
 
 | Table | 역할 |
 | --- | --- |
@@ -102,10 +102,10 @@ Blue Shelter는 정신의료서비스의 수요자와 공급자 간의 상호소
 
 # 서비스 화면
 - 메인페이지
-![main][/institutional-users-service-process/1.png]
+![main](/institutional-users-service-process/1.png)
 
 - 지도 페이지
-![map][/general-user-service-process/4.png]
+![map](/general-user-service-process/4.png)
 
 - 게시판 페이지
-![posting][/general-user-service-process/6.png]
+![posting](/general-user-service-process/6.png)
